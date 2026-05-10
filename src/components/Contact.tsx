@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { Mail, MapPin, Globe, AlertTriangle } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -17,16 +17,14 @@ export default function Contact() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="glass-card p-8 rounded-3xl flex items-start gap-6 relative overflow-hidden">
-              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <Phone className="w-6 h-6 text-gold" />
+            <div className="glass-card p-8 rounded-3xl flex items-start gap-6 border-l-4 border-l-red-500/80">
+              <div className="w-12 h-12 bg-red-50 dark:bg-red-900/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-red-500" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-semibold text-dark mb-2">WhatsApp Message</h3>
-                <p className="text-dark/70 mb-2">+91 94618 35705</p>
-                <a href="https://wa.me/919461835705" target="_blank" rel="noreferrer" className="inline-block text-gold hover:text-gold-dark font-medium transition-colors mb-3">Message on WhatsApp &rarr;</a>
-                <p className="text-xs text-red-500/80 font-medium bg-red-500/10 px-3 py-1.5 rounded-md inline-block">
-                  *Strictly messages only. No direct calls.
+                <h3 className="text-xl font-serif font-semibold text-red-600 dark:text-red-400 mb-2">Communication Policy</h3>
+                <p className="text-dark/80 text-sm leading-relaxed">
+                  Please <strong>do not call or send WhatsApp messages</strong>. To request a reading or ask questions, kindly use the <a href="#kundli" className="text-gold font-medium hover:text-gold-dark transition-colors">Consultation Form</a> exclusively.
                 </p>
               </div>
             </div>

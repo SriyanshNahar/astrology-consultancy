@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useForm as useHookForm } from 'react-hook-form';
 import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';
-import { Loader2, Upload, CheckCircle2 } from 'lucide-react';
+import { Loader2, Upload, CheckCircle2, AlertTriangle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Confetti from 'react-confetti';
 
@@ -193,6 +193,18 @@ export default function ConsultationForm() {
                   <span className="text-dark/80 font-medium text-xl">{item}</span>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-10 p-5 bg-red-50/80 border border-red-200/60 rounded-2xl shadow-sm backdrop-blur-sm">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-red-800 mb-1 uppercase tracking-wider text-sm">Important Policy</h4>
+                  <p className="text-sm text-red-700/90 leading-relaxed">
+                    Please <strong>do not call or send messages on WhatsApp</strong>. All consultation requests and inquiries must be submitted exclusively through this form. We will reach out to you after reviewing your details.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
