@@ -40,11 +40,14 @@ export default function Hero() {
               <Calendar className="w-5 h-5" />
               Book Consultation
             </a>
-            <a href="https://wa.me/919461835705" target="_blank" rel="noreferrer" className="px-8 py-4 bg-white/80 backdrop-blur hover:bg-white text-dark rounded-full border border-gold/30 transition-all flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-1 w-full sm:w-auto justify-center">
+            <a href="https://wa.me/919461835705" target="_blank" rel="noreferrer" className="px-8 py-4 bg-white/80 backdrop-blur hover:bg-white text-dark rounded-full border border-gold/30 transition-all flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-1 w-full sm:w-auto justify-center group relative">
               <MessageCircle className="w-5 h-5 text-green-500" />
               WhatsApp Chat
             </a>
           </div>
+          <p className="text-xs md:text-sm text-dark/50 font-medium italic mt-4">
+            *Please drop a WhatsApp message. Direct calls are strictly prohibited.
+          </p>
 
 
         </motion.div>

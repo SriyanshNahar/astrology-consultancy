@@ -17,14 +17,17 @@ export default function Contact() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="glass-card p-8 rounded-3xl flex items-start gap-6">
+            <div className="glass-card p-8 rounded-3xl flex items-start gap-6 relative overflow-hidden">
               <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-gold" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-semibold text-dark mb-2">WhatsApp / Call</h3>
-                <p className="text-dark/70 mb-3">+91 94618 35705</p>
-                <a href="https://wa.me/919461835705" target="_blank" rel="noreferrer" className="text-gold hover:text-gold-dark font-medium transition-colors">Message on WhatsApp &rarr;</a>
+                <h3 className="text-xl font-serif font-semibold text-dark mb-2">WhatsApp Message</h3>
+                <p className="text-dark/70 mb-2">+91 94618 35705</p>
+                <a href="https://wa.me/919461835705" target="_blank" rel="noreferrer" className="inline-block text-gold hover:text-gold-dark font-medium transition-colors mb-3">Message on WhatsApp &rarr;</a>
+                <p className="text-xs text-red-500/80 font-medium bg-red-500/10 px-3 py-1.5 rounded-md inline-block">
+                  *Strictly messages only. No direct calls.
+                </p>
               </div>
             </div>
 
