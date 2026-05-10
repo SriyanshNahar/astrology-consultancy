@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --color-cream: #fdfbf7;
+    --color-dark: #1a1a1a;
+    --color-white: #ffffff;
+  }
+
+  .dark {
+    --color-cream: #0f1115;
+    --color-dark: #fdfbf7;
+    --color-white: #1a1d24;
+  }
+
+  body {
+    @apply bg-cream text-dark font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_0_rgba(212,175,55,0.1)];
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-gold/10 shadow-[0_4px_24px_0_rgba(212,175,55,0.05)] transition-all duration-300 hover:shadow-[0_8px_32px_0_rgba(212,175,55,0.15)] hover:-translate-y-1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
