@@ -1,9 +1,20 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Calendar, MessageCircle } from 'lucide-react';
+import zodiacBg from '../assets/zodiac-bg.jpg';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-32 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 z-0 opacity-[0.12] dark:opacity-[0.25] mix-blend-multiply dark:mix-blend-screen transition-opacity duration-500 pointer-events-none"
+        style={{
+          backgroundImage: `url(${zodiacBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
