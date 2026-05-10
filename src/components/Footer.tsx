@@ -29,7 +29,6 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-serif font-semibold text-white mb-6">Contact Info</h4>
             <ul className="space-y-3 text-white/60">
-              <li>WhatsApp: +91 94618 35705</li>
               <li>Email: pandey.pranjal246@gmail.com</li>
             </ul>
           </div>
