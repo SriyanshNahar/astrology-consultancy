@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Calendar, MessageCircle } from 'lucide-react';
+import { Sparkles, Calendar } from 'lucide-react';
 import zodiacBg from '../assets/zodiac-bg.jpg';
 
 export default function Hero() {
