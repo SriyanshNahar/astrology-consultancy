@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="font-serif text-2xl font-bold text-white tracking-wide">Pranjal Pandey</span>
             </div>
             <p className="text-white/60 font-light leading-relaxed max-w-sm">
-              Spiritual guidance with positivity, wisdom, and clarity. Unlocking destiny through the ancient science of astrology.
+              Spiritual guidance with positivity, wisdom, and clarity. Unlocking destiny through the ancient science of astrology. Recognized as the Best Astrologer in Bhilwara.
             </p>
           </div>
           

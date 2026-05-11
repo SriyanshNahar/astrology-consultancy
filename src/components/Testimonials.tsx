@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: "Rahul Sharma",
-    text: "Pranjal ji's insights are incredibly accurate. His career guidance helped me make a crucial decision that completely changed my life for the better.",
+    text: "Pranjal ji is undoubtedly the best astrologer in Bhilwara. His insights are incredibly accurate, and his career guidance helped me make a crucial decision that completely changed my life for the better.",
     rating: 5
   },
   {

@@ -142,6 +142,16 @@ export default function ConsultationForm() {
       const randomWish = wellWishes[Math.floor(Math.random() * wellWishes.length)];
 
       setSubmittedData({ success: true, wish: randomWish });
+      
+      // Conversion Tracking (e.g., Google Analytics / Meta Pixel)
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'generate_lead', {
+          currency: 'INR',
+          value: 399,
+          content_name: 'Kundli Consultation'
+        });
+      }
+
       reset();
       setUploadedImageUrl1(null);
       setUploadProgress1(0);

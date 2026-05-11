@@ -1,73 +1,25 @@
-# React + TypeScript + Vite
+# Pranjal Pandey | Expert Astrology Consultancy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the front-end application for Pranjal Pandey's Astrology Consultancy platform.
 
-Currently, two official plugins are available:
+## SEO & GOOGLE BUSINESS OPTIMIZATION (Important Setup Steps)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+To ensure maximum visibility and local SEO ranking for "Astrologer in Bhilwara" and related search terms:
 
-## React Compiler
+1. **Submit `sitemap.xml` to Google Search Console** after deployment. This ensures Google crawls all pages efficiently.
+2. **Connect a verified Google Business Profile** (Google My Business) for stronger local SEO ranking. Ensure the address and contact details match exactly what is on the website.
+3. **Add business contact details consistently** across all platforms (Yelp, JustDial, Sulekha, social media) to build local citations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React 19
+- Vite
+- Tailwind CSS 4
+- TypeScript
+- Framer Motion
+- Lucide React
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Development
+```bash
+npm install
+npm run dev
 ```
