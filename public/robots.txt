@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pranjalpandey-astrology.com/sitemap.xml
+Sitemap: https://astrology-consultancy.vercel.app/sitemap.xml
